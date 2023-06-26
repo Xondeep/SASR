@@ -16,9 +16,9 @@ return new class extends Migration
             $table->string('name');
             $table->string('address');
             $table->string('class');
-            $table->string('phone_number');
+            $table->bigInteger('phone_number');
             $table->string('parent_email');
-            $table->string('rfid_card')->nullable();
+            $table->integer('rfid_card')->nullable();
             $table->timestamps();
         });
     }
